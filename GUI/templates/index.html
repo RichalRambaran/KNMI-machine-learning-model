@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Week 5 Richal Rambaran 19029217</title>
+    </head>
+    <body>
+        <h1>predict average day temperature in °C</h1>
+        <!‐‐ url_for in action via flask and predict_temperature function is being called ‐‐>
+        <form action = "{{ url_for('predict_temperature')}}" method = "POST">
+            <input type="number" name="date" placeholder="20210618" required="required" />
+            <button type="submit">Predict</button>
+        </form>
+    <!‐‐ return value of the function is shown ‐‐>
+    {{ answer }}
+    </body>
+</html>
